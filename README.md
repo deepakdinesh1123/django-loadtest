@@ -2,7 +2,6 @@
 
 This repository conatins a sample Django project that it will used to benchmark different ASGI servers and the gunicorn server.
 ## How to run
----
 
 - Install docker
 - Create a virtual environment and install [locust](https://locust.io/)
