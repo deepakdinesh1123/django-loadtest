@@ -1,16 +1,18 @@
 from locust import HttpUser,task, between
+import time
 
 class UserBehavior(HttpUser):
 
     wait_time = between(5000, 9000)
     def on_start(self):
+        time.sleep(10)
         self.login()
     
     def login(self):
         response = self.client.get("/admin/")
         csrftoken = response.cookies['csrftoken']
         self.client.post(
-        '/admin/login/',
+        '/admin/',
         {
             'username': 'admin',
             'password': 'Admin@1234',
@@ -18,7 +20,7 @@ class UserBehavior(HttpUser):
         },
         headers={
             'X-CSRFToken': csrftoken,
-            'Referer': self.host + '/admin/login/'
+            'Referer': self.host + '/admin/'
         })
 
     @task
