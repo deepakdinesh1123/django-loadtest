@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Test Report for loadtest.py</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon"/>
     <style>
         body {
             background: #173529;
@@ -119,7 +120,7 @@ table.stats tr.total td {
 
         <div class="info">
             
-            <p>During: <span class="l10n datetime">2022-08-01 01:18:06</span> - <span class="l10n datetime">2022-08-01 01:18:24</span></p>
+            <p>During: <span class="l10n datetime">2022-08-17 09:16:12</span> - <span class="l10n datetime">2022-08-17 09:17:10</span></p>
             <p>Target Host: <span>http://localhost:8000</span></p>
             <p>Script: <span>loadtest.py</span></p>
         </div>
@@ -129,16 +130,16 @@ table.stats tr.total td {
             <table class="stats">
                 <thead>
                     <tr>
-                        <th>Method</th>
-                        <th>Name</th>
-                        <th># Requests</th>
-                        <th># Fails</th>
-                        <th>Average (ms)</th>
-                        <th>Min (ms)</th>
-                        <th>Max (ms)</th>
-                        <th>Average size (bytes)</th>
-                        <th>RPS</th>
-                        <th>Failures/s</th>
+                        <th class="sortable">Method</th>
+                        <th class="sortable">Name</th>
+                        <th class="sortable"># Requests</th>
+                        <th class="sortable"># Fails</th>
+                        <th class="sortable">Average (ms)</th>
+                        <th class="sortable">Min (ms)</th>
+                        <th class="sortable">Max (ms)</th>
+                        <th class="sortable">Average size (bytes)</th>
+                        <th class="sortable">RPS</th>
+                        <th class="sortable">Failures/s</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -146,248 +147,248 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/admin/</td>
-                            <td>110</td>
-                            <td>10</td>
-                            <td>352</td>
-                            <td>21</td>
-                            <td>875</td>
-                            <td>2013</td>
-                            <td>6.3</td>
-                            <td>0.6</td>
+                            <td>100</td>
+                            <td>0</td>
+                            <td>1710</td>
+                            <td>28</td>
+                            <td>4100</td>
+                            <td>2218</td>
+                            <td>1.7</td>
+                            <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>POST</td>
-                            <td>/admin/login/</td>
+                            <td>/admin/</td>
                             <td>100</td>
-                            <td>100</td>
-                            <td>2067</td>
-                            <td>197</td>
-                            <td>9108</td>
-                            <td>11560</td>
-                            <td>5.7</td>
-                            <td>5.7</td>
+                            <td>0</td>
+                            <td>407</td>
+                            <td>20</td>
+                            <td>761</td>
+                            <td>2218</td>
+                            <td>1.7</td>
+                            <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/1</td>
-                            <td>19</td>
+                            <td>25</td>
                             <td>0</td>
-                            <td>963</td>
-                            <td>201</td>
-                            <td>3074</td>
-                            <td>7698</td>
-                            <td>1.1</td>
+                            <td>8372</td>
+                            <td>19</td>
+                            <td>20704</td>
+                            <td>2248</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/2</td>
-                            <td>19</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>917</td>
-                            <td>27</td>
-                            <td>1922</td>
-                            <td>7698</td>
-                            <td>1.1</td>
+                            <td>9702</td>
+                            <td>18</td>
+                            <td>30648</td>
+                            <td>2248</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/3</td>
-                            <td>19</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>1168</td>
-                            <td>42</td>
-                            <td>3482</td>
-                            <td>7698</td>
-                            <td>1.1</td>
+                            <td>761</td>
+                            <td>19</td>
+                            <td>5067</td>
+                            <td>2248</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/4</td>
-                            <td>19</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>852</td>
-                            <td>65</td>
-                            <td>3212</td>
-                            <td>7698</td>
-                            <td>1.1</td>
+                            <td>778</td>
+                            <td>20</td>
+                            <td>10463</td>
+                            <td>2248</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/5</td>
-                            <td>19</td>
+                            <td>21</td>
                             <td>0</td>
-                            <td>755</td>
-                            <td>87</td>
-                            <td>2599</td>
-                            <td>7698</td>
-                            <td>1.1</td>
+                            <td>298</td>
+                            <td>21</td>
+                            <td>565</td>
+                            <td>2248</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/1</td>
-                            <td>34</td>
+                            <td>30</td>
                             <td>0</td>
-                            <td>929</td>
-                            <td>178</td>
-                            <td>2960</td>
-                            <td>8588</td>
-                            <td>1.9</td>
+                            <td>10894</td>
+                            <td>59</td>
+                            <td>35526</td>
+                            <td>2260</td>
+                            <td>0.5</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/2</td>
-                            <td>34</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>1148</td>
-                            <td>139</td>
-                            <td>3241</td>
-                            <td>8588</td>
-                            <td>1.9</td>
+                            <td>11443</td>
+                            <td>59</td>
+                            <td>30656</td>
+                            <td>2260</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/3</td>
-                            <td>34</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>1128</td>
-                            <td>350</td>
-                            <td>2861</td>
-                            <td>8588</td>
-                            <td>1.9</td>
+                            <td>354</td>
+                            <td>57</td>
+                            <td>609</td>
+                            <td>2260</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/4</td>
-                            <td>34</td>
+                            <td>23</td>
                             <td>0</td>
-                            <td>952</td>
-                            <td>192</td>
-                            <td>2223</td>
-                            <td>8588</td>
-                            <td>1.9</td>
+                            <td>369</td>
+                            <td>62</td>
+                            <td>603</td>
+                            <td>2260</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/5</td>
-                            <td>34</td>
+                            <td>19</td>
                             <td>0</td>
-                            <td>861</td>
-                            <td>196</td>
-                            <td>3660</td>
-                            <td>8588</td>
-                            <td>1.9</td>
+                            <td>304</td>
+                            <td>49</td>
+                            <td>538</td>
+                            <td>2260</td>
+                            <td>0.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/1</td>
-                            <td>24</td>
+                            <td>21</td>
                             <td>0</td>
-                            <td>782</td>
-                            <td>54</td>
-                            <td>2385</td>
-                            <td>6775</td>
-                            <td>1.4</td>
+                            <td>9765</td>
+                            <td>63</td>
+                            <td>35512</td>
+                            <td>2258</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/2</td>
-                            <td>24</td>
+                            <td>20</td>
                             <td>0</td>
-                            <td>945</td>
-                            <td>23</td>
-                            <td>2928</td>
-                            <td>6775</td>
-                            <td>1.4</td>
+                            <td>13971</td>
+                            <td>5072</td>
+                            <td>30705</td>
+                            <td>2258</td>
+                            <td>0.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/3</td>
-                            <td>24</td>
+                            <td>20</td>
                             <td>0</td>
-                            <td>779</td>
-                            <td>24</td>
-                            <td>1851</td>
-                            <td>6775</td>
-                            <td>1.4</td>
+                            <td>448</td>
+                            <td>57</td>
+                            <td>630</td>
+                            <td>2258</td>
+                            <td>0.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/4</td>
-                            <td>24</td>
+                            <td>20</td>
                             <td>0</td>
-                            <td>905</td>
-                            <td>33</td>
-                            <td>2729</td>
-                            <td>6775</td>
-                            <td>1.4</td>
+                            <td>461</td>
+                            <td>63</td>
+                            <td>616</td>
+                            <td>2258</td>
+                            <td>0.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/5</td>
-                            <td>24</td>
+                            <td>17</td>
                             <td>0</td>
-                            <td>704</td>
-                            <td>63</td>
-                            <td>2077</td>
-                            <td>6775</td>
-                            <td>1.4</td>
+                            <td>405</td>
+                            <td>51</td>
+                            <td>539</td>
+                            <td>2258</td>
+                            <td>0.3</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/simple/test</td>
-                            <td>23</td>
+                            <td>21</td>
                             <td>0</td>
-                            <td>200</td>
-                            <td>61</td>
-                            <td>462</td>
-                            <td>10</td>
-                            <td>1.3</td>
+                            <td>14210</td>
+                            <td>5071</td>
+                            <td>35520</td>
+                            <td>50000</td>
+                            <td>0.4</td>
                             <td>0.0</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>618</td>
-                            <td>110</td>
-                            <td>984</td>
-                            <td>21</td>
-                            <td>9108</td>
-                            <td>7090</td>
-                            <td>35.3</td>
-                            <td>6.3</td>
+                            <td>552</td>
+                            <td>0</td>
+                            <td>3816</td>
+                            <td>18</td>
+                            <td>35526</td>
+                            <td>4058</td>
+                            <td>9.5</td>
+                            <td>0.0</td>
                         </tr>
                     
                 </tbody>
@@ -399,16 +400,16 @@ table.stats tr.total td {
             <table class="stats">
                 <thead>
                     <tr>
-                        <th>Method</th>
-                        <th>Name</th>
-                        <th>50%ile (ms)</th>
-                        <th>60%ile (ms)</th>
-                        <th>70%ile (ms)</th>
-                        <th>80%ile (ms)</th>
-                        <th>90%ile (ms)</th>
-                        <th>95%ile (ms)</th>
-                        <th>99%ile (ms)</th>
-                        <th>100%ile (ms)</th>
+                        <th class="sortable">Method</th>
+                        <th class="sortable">Name</th>
+                        <th class="sortable">50%ile (ms)</th>
+                        <th class="sortable">60%ile (ms)</th>
+                        <th class="sortable">70%ile (ms)</th>
+                        <th class="sortable">80%ile (ms)</th>
+                        <th class="sortable">90%ile (ms)</th>
+                        <th class="sortable">95%ile (ms)</th>
+                        <th class="sortable">99%ile (ms)</th>
+                        <th class="sortable">100%ile (ms)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -416,292 +417,254 @@ table.stats tr.total td {
                         <tr>
                             <td>GET</td>
                             <td>/admin/</td>
-                            <td>320</td>
-                            <td>360</td>
-                            <td>440</td>
-                            <td>470</td>
-                            <td>710</td>
-                            <td>850</td>
-                            <td>870</td>
-                            <td>880</td>
+                            <td>1800</td>
+                            <td>2800</td>
+                            <td>3000</td>
+                            <td>3800</td>
+                            <td>4100</td>
+                            <td>4100</td>
+                            <td>4100</td>
+                            <td>4100</td>
                         </tr>
                     
                         <tr>
                             <td>POST</td>
-                            <td>/admin/login/</td>
-                            <td>1100</td>
-                            <td>1600</td>
-                            <td>2000</td>
-                            <td>4300</td>
-                            <td>5600</td>
-                            <td>6500</td>
-                            <td>9100</td>
-                            <td>9100</td>
+                            <td>/admin/</td>
+                            <td>460</td>
+                            <td>600</td>
+                            <td>640</td>
+                            <td>680</td>
+                            <td>710</td>
+                            <td>720</td>
+                            <td>760</td>
+                            <td>760</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/1</td>
-                            <td>800</td>
-                            <td>1000</td>
-                            <td>1100</td>
-                            <td>1400</td>
-                            <td>1700</td>
-                            <td>3100</td>
-                            <td>3100</td>
-                            <td>3100</td>
+                            <td>530</td>
+                            <td>20000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/2</td>
-                            <td>900</td>
-                            <td>1100</td>
-                            <td>1300</td>
-                            <td>1500</td>
-                            <td>1700</td>
-                            <td>1900</td>
-                            <td>1900</td>
-                            <td>1900</td>
+                            <td>10000</td>
+                            <td>11000</td>
+                            <td>11000</td>
+                            <td>11000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/3</td>
-                            <td>950</td>
-                            <td>1100</td>
-                            <td>1500</td>
-                            <td>1500</td>
-                            <td>3000</td>
-                            <td>3500</td>
-                            <td>3500</td>
-                            <td>3500</td>
+                            <td>500</td>
+                            <td>500</td>
+                            <td>530</td>
+                            <td>550</td>
+                            <td>590</td>
+                            <td>5100</td>
+                            <td>5100</td>
+                            <td>5100</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/4</td>
+                            <td>480</td>
+                            <td>540</td>
+                            <td>580</td>
+                            <td>590</td>
                             <td>600</td>
-                            <td>950</td>
-                            <td>1000</td>
-                            <td>1300</td>
-                            <td>1500</td>
-                            <td>3200</td>
-                            <td>3200</td>
-                            <td>3200</td>
+                            <td>620</td>
+                            <td>10000</td>
+                            <td>10000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/author/5</td>
+                            <td>460</td>
+                            <td>490</td>
+                            <td>490</td>
                             <td>510</td>
-                            <td>750</td>
-                            <td>820</td>
-                            <td>1100</td>
-                            <td>1900</td>
-                            <td>2600</td>
-                            <td>2600</td>
-                            <td>2600</td>
+                            <td>520</td>
+                            <td>540</td>
+                            <td>570</td>
+                            <td>570</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/1</td>
-                            <td>880</td>
-                            <td>1000</td>
-                            <td>1100</td>
-                            <td>1300</td>
-                            <td>1600</td>
-                            <td>1700</td>
-                            <td>3000</td>
-                            <td>3000</td>
+                            <td>660</td>
+                            <td>15000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>36000</td>
+                            <td>36000</td>
+                            <td>36000</td>
+                            <td>36000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/2</td>
-                            <td>1000</td>
-                            <td>1100</td>
-                            <td>1200</td>
-                            <td>1600</td>
-                            <td>2100</td>
-                            <td>2900</td>
-                            <td>3200</td>
-                            <td>3200</td>
+                            <td>10000</td>
+                            <td>11000</td>
+                            <td>11000</td>
+                            <td>11000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/3</td>
-                            <td>1000</td>
-                            <td>1300</td>
-                            <td>1300</td>
-                            <td>1600</td>
-                            <td>2000</td>
-                            <td>2600</td>
-                            <td>2900</td>
-                            <td>2900</td>
+                            <td>430</td>
+                            <td>500</td>
+                            <td>550</td>
+                            <td>560</td>
+                            <td>580</td>
+                            <td>590</td>
+                            <td>610</td>
+                            <td>610</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/4</td>
-                            <td>890</td>
-                            <td>980</td>
-                            <td>1200</td>
-                            <td>1400</td>
-                            <td>1900</td>
-                            <td>2100</td>
-                            <td>2200</td>
-                            <td>2200</td>
+                            <td>490</td>
+                            <td>560</td>
+                            <td>570</td>
+                            <td>570</td>
+                            <td>590</td>
+                            <td>590</td>
+                            <td>600</td>
+                            <td>600</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authordetail/5</td>
-                            <td>800</td>
-                            <td>860</td>
-                            <td>930</td>
-                            <td>1200</td>
-                            <td>1600</td>
-                            <td>2500</td>
-                            <td>3700</td>
-                            <td>3700</td>
+                            <td>460</td>
+                            <td>490</td>
+                            <td>490</td>
+                            <td>520</td>
+                            <td>520</td>
+                            <td>540</td>
+                            <td>540</td>
+                            <td>540</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/1</td>
-                            <td>570</td>
-                            <td>740</td>
-                            <td>1100</td>
-                            <td>1300</td>
-                            <td>1700</td>
-                            <td>1700</td>
-                            <td>2400</td>
-                            <td>2400</td>
+                            <td>670</td>
+                            <td>16000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>21000</td>
+                            <td>36000</td>
+                            <td>36000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/2</td>
-                            <td>890</td>
-                            <td>920</td>
-                            <td>1100</td>
-                            <td>1400</td>
-                            <td>1700</td>
-                            <td>2100</td>
-                            <td>2900</td>
-                            <td>2900</td>
+                            <td>11000</td>
+                            <td>11000</td>
+                            <td>16000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
+                            <td>31000</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/3</td>
-                            <td>770</td>
-                            <td>830</td>
-                            <td>940</td>
-                            <td>1100</td>
-                            <td>1600</td>
-                            <td>1600</td>
-                            <td>1900</td>
-                            <td>1900</td>
+                            <td>540</td>
+                            <td>560</td>
+                            <td>570</td>
+                            <td>590</td>
+                            <td>610</td>
+                            <td>630</td>
+                            <td>630</td>
+                            <td>630</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/4</td>
-                            <td>890</td>
-                            <td>950</td>
-                            <td>1100</td>
-                            <td>1300</td>
-                            <td>1500</td>
-                            <td>2300</td>
-                            <td>2700</td>
-                            <td>2700</td>
+                            <td>560</td>
+                            <td>590</td>
+                            <td>590</td>
+                            <td>600</td>
+                            <td>620</td>
+                            <td>620</td>
+                            <td>620</td>
+                            <td>620</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/admin/simple/authorgroup/5</td>
-                            <td>650</td>
-                            <td>680</td>
-                            <td>760</td>
-                            <td>1000</td>
-                            <td>1100</td>
-                            <td>1400</td>
-                            <td>2100</td>
-                            <td>2100</td>
+                            <td>500</td>
+                            <td>510</td>
+                            <td>510</td>
+                            <td>520</td>
+                            <td>540</td>
+                            <td>540</td>
+                            <td>540</td>
+                            <td>540</td>
                         </tr>
                     
                         <tr>
                             <td>GET</td>
                             <td>/simple/test</td>
-                            <td>160</td>
-                            <td>180</td>
-                            <td>250</td>
-                            <td>320</td>
-                            <td>450</td>
-                            <td>460</td>
-                            <td>460</td>
-                            <td>460</td>
+                            <td>10000</td>
+                            <td>15000</td>
+                            <td>20000</td>
+                            <td>25000</td>
+                            <td>30000</td>
+                            <td>31000</td>
+                            <td>36000</td>
+                            <td>36000</td>
                         </tr>
                     
                         <tr class="total">
                             <td></td>
                             <td>Aggregated</td>
-                            <td>670</td>
-                            <td>860</td>
-                            <td>1000</td>
-                            <td>1300</td>
-                            <td>1900</td>
-                            <td>3100</td>
-                            <td>6200</td>
-                            <td>9100</td>
+                            <td>540</td>
+                            <td>620</td>
+                            <td>1800</td>
+                            <td>5100</td>
+                            <td>11000</td>
+                            <td>21000</td>
+                            <td>36000</td>
+                            <td>36000</td>
                         </tr>
                     
                 </tbody>
             </table>
         </div>
 
-        
-            <div class="failures">
-                <h2>Failures Statistics</h2>
-                <table class="stats">
-                    <thead>
-                        <tr>
-                            <th>Method</th>
-                            <th>Name</th>
-                            <th>Error</th>
-                            <th>Occurrences</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                            <tr>
-                                <td>POST</td>
-                                <td>/admin/login/</td>
-                                <td>500 Server Error: Internal Server Error for url: http://localhost:8000/admin/login/</td>
-                                <td>4</td>
-                            </tr>
-                        
-                            <tr>
-                                <td>POST</td>
-                                <td>/admin/login/</td>
-                                <td>404 Client Error: Not Found for url: http://localhost:8000/accounts/profile/</td>
-                                <td>96</td>
-                            </tr>
-                        
-                            <tr>
-                                <td>GET</td>
-                                <td>/admin/</td>
-                                <td>Remote end closed connection without response</td>
-                                <td>10</td>
-                            </tr>
-                        
-                    </tbody>
-                </table>
-            </div>
         
 
         
@@ -716,7 +679,7 @@ table.stats tr.total td {
             <h2>Final ratio</h2>
             <div class="tasks" data-tasks="{&quot;per_class&quot;: {&quot;UserBehavior&quot;: {&quot;ratio&quot;: 1.0, &quot;tasks&quot;: {&quot;test&quot;: {&quot;ratio&quot;: 0.25}, &quot;author_group&quot;: {&quot;ratio&quot;: 0.25}, &quot;author_details&quot;: {&quot;ratio&quot;: 0.25}, &quot;author&quot;: {&quot;ratio&quot;: 0.25}}}}, &quot;total&quot;: {&quot;UserBehavior&quot;: {&quot;ratio&quot;: 1.0, &quot;tasks&quot;: {&quot;test&quot;: {&quot;ratio&quot;: 0.25}, &quot;author_group&quot;: {&quot;ratio&quot;: 0.25}, &quot;author_details&quot;: {&quot;ratio&quot;: 0.25}, &quot;author&quot;: {&quot;ratio&quot;: 0.25}}}}}"></div>
         </div>
-    
+
     </div>
 
     
@@ -986,12 +949,12 @@ function fillTasksFromRequest() {
     <script>
         
 var stats_history = {
-    "time": ["01:18:11", "01:18:16", "01:18:21", "01:18:26", "01:18:31", "01:18:36", "01:18:41", "01:18:46", "01:18:51", "01:18:56", "01:19:01"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
+    "time": ["09:16:17", "09:16:22", "09:16:27", "09:16:32", "09:16:37", "09:16:42", "09:16:47", "09:16:52", "09:16:57", "09:17:02", "09:17:07"].map(server_time => new Date(new Date().setUTCHours(...(server_time.split(":")))).toLocaleTimeString()),
     "user_count": [{"value": 50}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}, {"value": 100}],
-    "current_rps": [{"users": 50, "value": 17.666666666666668}, {"users": 100, "value": 32.5}, {"users": 100, "value": 38.5}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}, {"users": 100, "value": 32.9}],
-    "current_fail_per_sec": [{"users": 50, "value": 7.666666666666667}, {"users": 100, "value": 8.0}, {"users": 100, "value": 7.2}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}, {"users": 100, "value": 5.8}],
-    "response_time_percentile_50": [{"users": 50, "value": 420.0}, {"users": 100, "value": 500.0}, {"users": 100, "value": 1000.0}, {"users": 100, "value": 1100.0}, {"users": 100, "value": 600.0}, {"users": 100, "value": 380.0}, {"users": 100, "value": 380.0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}],
-    "response_time_percentile_95": [{"users": 50, "value": 1000.0}, {"users": 100, "value": 1800.0}, {"users": 100, "value": 4400.0}, {"users": 100, "value": 5100.0}, {"users": 100, "value": 2100.0}, {"users": 100, "value": 540.0}, {"users": 100, "value": 540.0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}],
+    "current_rps": [{"users": 50, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 7.8}, {"users": 100, "value": 26.9}, {"users": 100, "value": 26.4}, {"users": 100, "value": 10.2}, {"users": 100, "value": 3.6}, {"users": 100, "value": 2.9}, {"users": 100, "value": 2.8}, {"users": 100, "value": 14.2}],
+    "current_fail_per_sec": [{"users": 50, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 0}],
+    "response_time_percentile_50": [{"users": 50, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 71}, {"users": 100, "value": 180.0}, {"users": 100, "value": 620.0}, {"users": 100, "value": 490.0}, {"users": 100, "value": 130.0}, {"users": 100, "value": 21000.0}, {"users": 100, "value": 21000.0}, {"users": 100, "value": 570.0}, {"users": 100, "value": 570.0}],
+    "response_time_percentile_95": [{"users": 50, "value": 0}, {"users": 100, "value": 0}, {"users": 100, "value": 200.0}, {"users": 100, "value": 5100.0}, {"users": 100, "value": 5200.0}, {"users": 100, "value": 10000.0}, {"users": 100, "value": 16000.0}, {"users": 100, "value": 21000.0}, {"users": 100, "value": 21000.0}, {"users": 100, "value": 31000.0}, {"users": 100, "value": 31000.0}],
     "markers": [],
 };
         var rpsChart = new LocustLineChart($(".charts-container"), "Total Requests per Second", ["RPS", "Failures/s"], "reqs/s", ['#00ca5a', '#ff6d6d']);
@@ -1034,6 +997,26 @@ var stats_history = {
         });
 
         fillTasksFromObj()
+    </script>
+
+    <script>
+        $('.sortable').click(function() {
+            var table = $(this).parents('table').eq(0)
+            var rowArray = table.find('tr:gt(0)').toArray()
+            var aggregatedRow = rowArray.pop()
+            var rows = rowArray.sort(comparer($(this).index()))
+            this.asc = !this.asc
+            if (!this.asc){rows = rows.reverse()}
+            for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+            table.append(aggregatedRow)
+        })
+        function comparer(index) {
+            return function(a,b) {
+                var valA = getCellValue(a, index), valB = getCellValue(b, index)
+                return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+            }
+        }
+        function getCellValue(row, index) { return $(row).children('td').eq(index).text() }
     </script>
 </body>
 </html>

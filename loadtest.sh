@@ -1,5 +1,5 @@
 #!/bin/bash
-servers=('asgi' 'daphne' 'gunicorn' 'hypercorn' 'uvicorn')
+servers=('asgi' 'daphne' 'hypercorn' 'uvicorn')
 for server in "${servers[@]}";
 do
     docker run --name "$server-server" -d -p 8000:8000 --rm "$server"

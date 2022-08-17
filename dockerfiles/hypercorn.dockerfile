@@ -10,7 +10,7 @@ WORKDIR /prod
 
 RUN apt-get -y update && apt -y upgrade
 RUN apt-get -y install git
-RUN pip install git+https://github.com/django/django.git@refs/pull/14652/head
+RUN pip install git+https://github.com/django/django.git@refs/pull/15727/head
 RUN pip install hypercorn
 RUN pip install pyyaml
 RUN python manage.py makemigrations
