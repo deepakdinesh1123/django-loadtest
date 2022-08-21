@@ -1,19 +1,28 @@
 # django-loadtest
-
 This repository conatins a sample Django project that it will used to benchmark different ASGI servers and the gunicorn server.
-## How to run
+
+# How to add a project 
+
+- Create a django project in the examples folder by using the project template in `project_template.zip` with the command
+
+```
+django-admin startproject --template=template/project_template.zip project_name
+```
+- Add the dockerfiles to the "`examples\project_name\dockerfiles`" directory
+- The name of the dockerfile should be in the format "`server_name.dockerfile`"
+
+# How to run
 
 - Install docker
-- Create a virtual environment and install [locust](https://locust.io/)
-- If you are on a linux machine 
-    - run the following commands in the root directory
-        ```
-        bash build.sh
-        bash loadtest.sh
-        ```
-- If you are on a Windows machine
-    - Build the images for all the files in the `dockerfiles` directory
-    - Load test each server one by one using the command
-        ```
-        locust --headless --users 100 --spawn-rate 10 -t 60s -H http://localhost:8000 -f loadtest.py
-        ```
+- Create a python virtual environment and install [locust](https://locust.io/)
+- Load test projects using the commands 
+
+```bash
+python build.py project_name_1 project_name_2 project_name_3
+python loadtest.py project_name_1 project_name_2 project_name_3
+```
+
+# Modify Locust configuration
+
+- The locust configuration is stored in the file `locust.conf` modify the file to change the default locust configuration
+

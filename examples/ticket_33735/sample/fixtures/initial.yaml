@@ -1,0 +1,80 @@
+-   model: sample.authorgroup
+    pk: 1
+    fields:
+        name: group1
+        size: 1
+-   model: sample.authorgroup
+    pk: 2
+    fields:
+        name: group2
+        size: 2
+-   model: sample.authorgroup
+    pk: 3
+    fields:
+        name: group3
+        size: 3
+-   model: sample.authorgroup
+    pk: 4
+    fields:
+        name: group4
+        size: 4
+-   model: sample.authorgroup
+    pk: 5
+    fields:
+        name: group5
+        size: 5
+-   model: sample.author
+    pk: 1
+    fields:
+        name: author1
+        group: group1
+-   model: sample.author
+    pk: 2
+    fields:
+        name: author2
+        group: group2
+-   model: sample.author
+    pk: 3
+    fields:
+        name: author3
+        group: group3
+-   model: sample.author
+    pk: 4
+    fields:
+        name: author4
+        group: group4
+-   model: sample.author
+    pk: 5
+    fields:
+        name: author5
+        group: group5
+-   model: sample.authordetail
+    pk: 1
+    fields:
+        user_name: author1
+        age: 10
+        address: addr1
+-   model: sample.authordetail
+    pk: 2
+    fields:
+        user_name: author2
+        age: 11
+        address: addr2
+-   model: sample.authordetail
+    pk: 3
+    fields:
+        user_name: author3
+        age: 12
+        address: addr3
+-   model: sample.authordetail
+    pk: 4
+    fields:
+        user_name: author4
+        age: 13
+        address: addr4
+-   model: sample.authordetail
+    pk: 5
+    fields:
+        user_name: author5
+        age: 14
+        address: addr5

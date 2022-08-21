@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'simple',
+    'sample',
+
+    'channels'
 ]
 
 MIDDLEWARE = [
@@ -51,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'prod.urls'
+ROOT_URLCONF = 'ticket_33735.urls'
 
 TEMPLATES = [
     {
@@ -69,9 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'prod.wsgi.application'
-
-ASGI_APPLICATION = 'prod.asgi.application'
+ASGI_APPLICATION = 'ticket_33735.asgi_config.application'
 
 
 # Database
