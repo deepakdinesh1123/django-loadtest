@@ -6,9 +6,10 @@ This repository conatins a sample Django project that it will used to benchmark 
 - Create a django project in the examples folder by using the project template in `project_template.zip` with the command
 
 ```
-django-admin startproject --template=template/project_template.zip project_name
+django-admin startproject --template=../template/project_template.zip project_name
 ```
-- Add the dockerfiles to the "`examples\project_name\dockerfiles`" directory
+- Modify the existing dockerfiles in the "`examples\project_name\dockerfiles`" directory
+- Add other dockerfiles to the same directory
 - The name of the dockerfile should be in the format "`server_name.dockerfile`"
 
 # How to run
